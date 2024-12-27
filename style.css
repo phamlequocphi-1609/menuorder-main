@@ -1,0 +1,158 @@
+body {
+    background-color: #20453e;
+    /* background-image: url(./images/bg.webp); */
+    background-image: 
+    linear-gradient(rgba(32, 69, 62, 0.9), rgba(32, 69, 62, 0.9)), /* Lớp phủ màu rõ hơn */
+    url(./images/background-full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+.menu-title {
+    background-color: rgb(111 13 4);
+    text-align: center;
+    color: #dbb155;
+    text-transform: uppercase;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 32px;
+}
+.banner-background {
+    background-image: url(./images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+}
+
+.menu-list-nav ul {
+    list-style: none;
+    color: #dbb155;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-list-nav ul li {
+    border: 0.5px solid #dbb155;
+    border-radius: 4px;
+    padding: 6px 20px;
+    transition: .3s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.menu-list-nav ul li:hover {
+    /* background-color: #a85368; */
+    background-color: rgb(111 13 4);
+}
+
+.menu-list-nav ul li.active {
+    background-color: rgb(111 13 4);
+}
+
+.order-content-prices-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.view-detail {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    background-color: #20453e;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.order {
+    background-color: #163d36;
+    border: .5px solid transparent;
+    border-radius: 4px;
+}
+.order:hover {
+    border: .5px solid #dbb155;
+}
+.order-img img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    object-position: center center;
+}
+
+.order-content {
+    padding: 0.7rem 0.8rem 0.5rem 0.8rem;
+}
+
+.order-content-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    line-height: 17px;
+    height: 55px;
+    text-transform: uppercase;
+    display: block;
+    flex-grow: 1;
+}
+.order-content-prices .label {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #B48A78;
+    letter-spacing: 1px;
+}
+.order-content-prices .prices {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+
+.modal-content {
+    background-color: #163d36;
+    color: #fff;
+}
+.btn-close {
+    color: #fff;
+}
+.btn-close {
+    filter: invert(1); /* Chuyển màu đen sang trắng */
+    opacity: 1; /* Tăng độ rõ của nút */
+}
+
+.btn-close:hover {
+    filter: invert(1) brightness(1.2); /* Làm sáng hơn khi hover */
+}
+@media screen and (max-width: 767px) {
+    .banner-background {
+        height: 60vh;
+    }
+    .view-detail {
+        margin-top: -65px;
+    }
+    .menu-list-nav ul {
+        display: grid;
+        padding-left: 0;
+        grid-template-columns: 1fr 1fr;
+    }
+    .banner {
+        background-color: rgb(111 13 4);
+    }
+    .banner img {
+        width: 125px;
+    }
+    .menu-title {
+        font-size: 24px;
+    }
+}
